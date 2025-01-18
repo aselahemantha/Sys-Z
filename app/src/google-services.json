@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092710272050",
+    "project_id": "sys-z-d4cd6",
+    "storage_bucket": "sys-z-d4cd6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092710272050:android:e67ab3a00c2243d4f7c02b",
+        "android_client_info": {
+          "package_name": "com.innovateX.sysz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmoCcjAmpIhD1DiWvn0KTOeYnXoIL7-oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,7 +3,7 @@ package com.example.basesdk.data.repository.institute
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.gtn.basesdk.domain.configurationservice.ConfigurationService
+import com.example.basesdk.domain.configurationservice.ConfigurationService
 import com.gtn.basesdk.domain.configurationservice.LogService
 import com.example.basesdk.domain.model.InstitutionConfig
 import com.example.basesdk.domain.repository.institute.ConfigurationRepository

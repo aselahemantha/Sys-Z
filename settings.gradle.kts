@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Starter"
+rootProject.name = "Sys-Z"
 include(":app")
 include(":UILibrary")
 include(":BaseSDK")
