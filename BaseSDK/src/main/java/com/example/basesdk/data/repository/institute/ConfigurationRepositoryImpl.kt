@@ -23,10 +23,10 @@ class ConfigurationRepositoryImpl
     ) : ConfigurationRepository {
         override suspend fun initialFetchConfiguration(): Resource<InstitutionConfig?> {
             try {
-                val isSuccess = configurationService.fetchConfiguration()
-                if (!isSuccess) {
-                    logService.logNonFatalCrash(Throwable("Firebase fetch configuration service response failed"))
-                }
+//                val isSuccess = configurationService.fetchConfiguration()
+//                if (!isSuccess) {
+//                    logService.logNonFatalCrash(Throwable("Firebase fetch configuration service response failed"))
+//                }
             } catch (e: Exception) {
                 LogMe(e.message.toString())
             }

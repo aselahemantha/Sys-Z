@@ -6,6 +6,7 @@ import com.example.basesdk.domain.model.InstitutionConfig
 import com.example.basesdk.domain.usecase.auth.ConnectivityCheckerUseCase
 import com.example.basesdk.domain.usecase.institute.InitialFetchUseCase
 import com.example.basesdk.util.Resource
+import com.example.uilibrary.BuildConfig
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.google.firebase.perf.FirebasePerformance
 import com.example.uilibrary.coreui.NavigationItem
@@ -29,19 +30,19 @@ class SplashViewModel
             MutableStateFlow(SplashScreen.KeepOnScreenCondition { false })
         val isLoading = _isLoading.asStateFlow()
 
-        suspend fun initialFetchAndCacheConfiguration(): Resource<InstitutionConfig?> {
+//        suspend fun initialFetchAndCacheConfiguration(): Resource<InstitutionConfig?> {
 //            if (BuildConfig.DEBUG) {
 //                FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(false)
 //                FirebasePerformance.getInstance().isPerformanceCollectionEnabled = false
 //            }
-            val result = MutableStateFlow(initialFetchUseCase.execute()).asStateFlow()
-            _isLoading.emit(SplashScreen.KeepOnScreenCondition { false })
-            return result.value
-        }
+//            val result = MutableStateFlow(initialFetchUseCase.execute()).asStateFlow()
+//            _isLoading.emit(SplashScreen.KeepOnScreenCondition { false })
+//            return result.value
+//        }
 
         fun navigateToLogin() {
             appNavigator.tryNavigateTo(
-                NavigationItem.LoginScreen(),
+                NavigationItem.Tab01(),
                 inclusive = true,
             )
         }

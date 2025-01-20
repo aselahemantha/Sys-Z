@@ -44,13 +44,13 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
     var textFieldValue by remember { mutableStateOf("") }
     LaunchedEffect(key1 = viewModel, key2 = connectionState) {
         if (connectionState == ConnectionState.CONNECTED) {
-            val fetchData = viewModel.initialFetchAndCacheConfiguration()
-            if (fetchData.data == null) {
-                textFieldValue = fetchData.message.toString()
-                isTextFieldVisible = true
-            } else {
-                textFieldValue = fetchData.message.toString()
-            }
+//            val fetchData = viewModel.initialFetchAndCacheConfiguration()
+//            if (fetchData.data == null) {
+//                textFieldValue = fetchData.message.toString()
+//                isTextFieldVisible = true
+//            } else {
+//                textFieldValue = fetchData.message.toString()
+//            }
             delay(350)
             viewModel.navigateToLogin()
         }
@@ -64,9 +64,9 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
     Box {
         Column(
             modifier =
-                Modifier
-                    .fillMaxSize()
-                    .background(LocalCustomColorsPalette.current.figmaColors.Background10),
+            Modifier
+                .fillMaxSize()
+                .background(LocalCustomColorsPalette.current.figmaColors.Background10),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
@@ -76,9 +76,9 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
                 painter = painterResource(id = R.drawable.device_health_splash),
                 contentDescription = "gtn logo",
                 modifier =
-                    Modifier
-                        .width(296f.scaleWidth())
-                        .height(133f.scaleHeight()),
+                Modifier
+                    .width(296f.scaleWidth())
+                    .height(133f.scaleHeight()),
             )
 
             Spacer(modifier = Modifier.height(396f.scaleHeight()))
@@ -95,8 +95,8 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
                     contentDescription = "GTN icon",
                     modifier =
                         Modifier
-                            .width(16.dp)
-                            .height(15.dp)
+                            .width(16f.scaleWidth())
+                            .height(15f.scaleHeight())
                 )
             }
         }

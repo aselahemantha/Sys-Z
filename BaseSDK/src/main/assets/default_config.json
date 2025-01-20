@@ -1,0 +1,239 @@
+{
+    "NavConfig": {
+        "BottomNav": [
+            {
+                "route": "tab01-home",
+                "langKey": "PAGE03",
+                "icon": "Watchlist",
+                "screenId": "Watchlist"
+            },
+            {
+                "route": "tab02-portfolio",
+                "langKey": "PAGE01",
+                "icon": "Home",
+                "screenId": "Home"
+            },
+            {
+                "route": "tab03-watchlist",
+                "langKey": "PAGE02",
+                "icon": "Portfolio",
+                "screenId": "Portfolio"
+            },
+            {
+                "route": "tab04-trade",
+                "langKey": "PAGE04",
+                "icon": "Trade",
+                "screenId": "Trade"
+            },
+            {
+                "route": "tab05-discover",
+                "langKey": "PAGE05",
+                "icon": "Discover",
+                "screenId": "Discover"
+            }
+        ]
+    },
+    "ScreenConfig": {
+        "LoginScreen": [
+            {
+                "WidgetId": "Login"
+            }
+        ],
+        "HomeScreen": [
+            {
+                "WidgetId": "PortfolioCard"
+            },
+            {
+                "WidgetId": "ShortcutButtons"
+            },
+            {
+                "WidgetId": "GlobalMarketsCard"
+            },
+            {
+                "WidgetId": "CuratedListsCard"
+            }
+        ],
+        "PortfolioScreen": [
+            {
+                "WidgetId": "PortfolioCard"
+            },
+            {
+                "WidgetId": "HoldingsList"
+            },
+            {
+                "WidgetId": "CashBalance"
+            }
+        ],
+        "List": [
+            {
+                "WidgetId": "Watchlist"
+            }
+        ]
+    },
+    "loginConfig": {
+        "assistancePhone": "+97317005700",
+        "assistanceEmail": "global@mubashertrade.com",
+        "isNewUser": true
+    },
+    "configType": {
+        "configValue": "Default"
+    },
+    "colorConfig": {
+        "primaryColor": "#0416BC"
+    },
+    "welcomeConfig": {
+        "welcomeText": "Welcome"
+    },
+    "appToken": {
+        "accessToken": null
+    },
+    "homeScreenConfig": {
+        "shortcutButtons": [
+            {
+                "route": "tab02-portfolio",
+                "icon": "portfolio",
+                "title": "portfolio"
+            },
+            {
+                "route": "tab03-watchlist",
+                "icon": "watchlist_icon",
+                "title": "enter_watchlist"
+            },
+            {
+                "route": "tab04-trade",
+                "icon": "top_bought",
+                "title": "enter_top_bought"
+            },
+            {
+                "route": "deposit",
+                "icon": "inv_store_icon",
+                "title": "inv_store"
+            },
+            {
+                "route": "tab05-discover",
+                "icon": "alerts",
+                "title": "alerts"
+            },
+            {
+                "route": "deposit",
+                "icon": "deposits",
+                "title": "deposit"
+            }
+        ],
+        "globalMarkets": [
+            {
+                "icon": "gtn-logo",
+                "title": "DJI",
+                "subTitle": "DJI",
+                "key": "DJI~7~I:DJI"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "SP500",
+                "subTitle": "SP500",
+                "key": "S&P~7~I:SP500"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "SXAUUSDOZ.SP",
+                "subTitle": "SXAUUSDOZ.SP",
+                "key": "GTISPM~101~SXAUUSDOZ.SP"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "SXAGUSDOZ.SP",
+                "subTitle": "SXAGUSDOZ.SP",
+                "key": "GTISPM~101~SXAGUSDOZ.SP"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "USDKWD",
+                "subTitle": "USDKWD",
+                "key": "PFX~14~USDKWD"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "USDJPY",
+                "subTitle": "USDJPY",
+                "key": "PFX~14~USDJPY"
+            },
+            {
+                "icon": "gtn-logo",
+                "title": "BTC/USD",
+                "subTitle": "BTC/USD",
+                "key": "TMCRY~126~BTC/USD"
+            }
+        ],
+        "curatedList": [
+            {
+                "icon": "spot",
+                "title": "SPOT",
+                "subTitle": "2 Symbols"
+            },
+            {
+                "icon": "bio_tech",
+                "title": "Bio Tech",
+                "subTitle": "10 Symbols"
+            },
+            {
+                "icon": "default_electric_vehicles",
+                "title": "Electric Vehicles",
+                "subTitle": "12 Symbols"
+            },
+            {
+                "icon": "commodities",
+                "title": "Commodities",
+                "subTitle": "8 Symbols"
+            },
+            {
+                "icon": "top_bought_1",
+                "title": "Top Bought",
+                "subTitle": "8 Symbols"
+            }
+        ],
+        "mostTradedList": [
+            {
+                "countryCode": "US",
+                "logo": "https://fhimages.feedgma.com/NSDQ/M/AAPL.png",
+                "symbol": "AAPL",
+                "exchange": "NSDQ",
+                "description": "Apple Inc"
+            }
+        ]
+    },
+    "spotOTConfig": {
+        "spots": [
+            {
+                "exchange": "GTNSPOT",
+                "symbol": "XAU/USD"
+            },
+            {
+                "exchange": "GTNSPOT",
+                "symbol": "XAG/USD"
+            }
+        ]
+    },
+    "predefinedList": [
+        { "exchange": "NSDQ", "wlname": "NSDQ100" },
+        { "exchange": "FTSE", "wlname": "FTSE350" },
+        { "exchange": "DJI", "wlname": "DJIA" },
+        { "exchange": "S&P", "wlname": "S&P500" },
+        { "exchange": "STCFD", "wlname": "GTN CFDs" },
+        { "exchange": "BINANCE", "wlname": "GTN Crypto WL2" },
+        { "exchange": "XASX", "wlname": "XASX_DEF" },
+        { "exchange": "XKLS", "wlname": "XKLS_DEF" },
+        { "exchange": "HKEX", "wlname": "HKEX_DEF" },
+        { "exchange": "HSTC", "wlname": "VIET_DEF" },
+        { "exchange": "XIDX", "wlname": "XIDX_DEF" },
+        { "exchange": "XKRX", "wlname": "XKRX_DEF" },
+        { "exchange": "XPHS", "wlname": "XPHS_DEF" },
+        { "exchange": "XBKK", "wlname": "XBKK_DEF" },
+        { "exchange": "SGX", "wlname": "SGX_DEF" },
+        { "exchange": "XTKS", "wlname": "XTKS_DEF" },
+        { "exchange": "LSE", "wlname": "FTSE100" },
+        { "exchange": "LSE", "wlname": "FTSE250" },
+        { "exchange": "CHIX", "wlname": "EURO STOXX" },
+        { "exchange": "GTNFI", "wlname": "GTNFI" },
+        { "exchange": "GTNSPOT", "wlname": "GTNSPOT" }
+    ]
+}

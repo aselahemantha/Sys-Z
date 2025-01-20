@@ -26,6 +26,7 @@ import androidx.fragment.app.FragmentActivity
 import com.example.starter.BuildConfig
 import com.example.uilibrary.coreui.theme.AuthenticationAppTheme
 import com.example.uilibrary.util.enums.AppTheme
+import com.example.uilibrary.view.dashboard.main.GetDashboardContent
 import com.example.uilibrary.view.onboard.splash.SplashActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.gtn.uilibrary.view.onboard.splash.SplashViewModel
@@ -101,9 +102,7 @@ class MainActivity : FragmentActivity() {
                                 // detectTapGestures(onTap = { focusManager.clearFocus() }) // comment for anr issue
                             },
                     ) {
-                        Text(
-                            "Hello Andorid"
-                        )
+                        GetDashboardContent(targetView, theme, onTheme)
                     }
                 }
             },

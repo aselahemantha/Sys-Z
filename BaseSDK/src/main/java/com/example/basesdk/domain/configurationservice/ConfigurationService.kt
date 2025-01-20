@@ -20,22 +20,11 @@ import com.google.firebase.perf.FirebasePerformance
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 
 interface ConfigurationService {
-    suspend fun fetchConfiguration(): Boolean
+//    suspend fun fetchConfiguration(): Boolean
 
     fun getPulseRemoteConfig(): FirebaseRemoteConfig?
 
-    val isShowHomeScreenNews: Boolean
-    val isShowHomeScreenMostTraded: Boolean
-    val isShowHomeScreenShortcutButtons: Boolean
-    val isShowHomeScreenPortfolioPosition: Boolean
-    val isShowHomeScreenGlobalMarkets: Boolean
-    val isShowHomeScreenCuratedList: Boolean
-    val isShowHomeScreenTopCard: Boolean
-    val isShowPortfolioScreenTopCard: Boolean
-    val baseURL: String
-    val isForceChartEnable: Boolean
-    val isForcePositionsEnable: Boolean
-    val isWatchlistTapUnable: Boolean
+    val isShowLoginText: Boolean
 
     fun getFirebasePerformance(): FirebasePerformance?
 }

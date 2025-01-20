@@ -1,0 +1,2617 @@
+{
+    "MOB": {
+        "version": "132",
+        "appRating": {
+            "version": "9",
+            "lastReviewedDate": "1685689144926"
+        }
+    },
+    "WEB": {
+        "version": "5",
+        "charting": {
+            "defaultChartSpan": "1_year",
+            "defaultChartType": "mountain",
+            "defaultAdvancedChartType": "candle",
+            "defaultBacklogPeriodicity": "1_day",
+            "defaultIntraDayPeriodicity": "1_minute",
+            "defaultChartSpanForBasicMode": "1_day"
+        },
+        "screener": {
+            "fixedColumns": [
+                "_symbol",
+                "_companyDesc",
+                "_currency"
+            ],
+            "maxWebColumns": 11.0,
+            "maxMobileColumns": 3.0,
+            "screenerPageSize": 20.0,
+            "mobileSortColumns": [
+                "_price",
+                "_pctChange",
+                "_volume"
+            ],
+            "selectableColumns": [
+                "_country",
+                "_price",
+                "_pctChange",
+                "_wk52High",
+                "_wk52Low",
+                "_volume"
+            ],
+            "MobileFixedColumns": [
+                "_symbol"
+            ],
+            "gicsSelectedColumn": "_gics",
+            "regionSelectedColumn": "_sector"
+        },
+        "portfolio": {
+            "decimalPlaces": -2.0
+        },
+        "tourGuide": {
+            "isFocusListCompleted": "false",
+            "isPortfolioCompleted": "false",
+            "isOneStopTradeCompleted": "false",
+            "isMubasherInvestCompleted": "false",
+            "isMobileTourGuideCompleted": "false",
+            "isWealthPortfolioCompleted": "false"
+        },
+        "rubixPreferences": {
+            "appHeader": {
+                "selectedIndex": "DFMGI",
+                "selectedExchange": "DFM"
+            }
+        },
+        "topBarMarketStatus": {
+            "defaultIndex": "DFMGI",
+            "defaultExchange": "DFM"
+        },
+        "fullMarketTimeAndSales": {
+            "version": "1",
+            "selectedExchangeCode": "ASE"
+        }
+    },
+    "watchList": {
+        "expand": {
+            "version": "NaN",
+            "selectedWebWlType": "1"
+        },
+        "shrink": {
+            "version": "NaN",
+            "selectedWebWlType": "1"
+        },
+        "version": "1733",
+        "smartWatchlist": {
+            "columns": [
+                {
+                    "id": "0",
+                    "width": 150.0
+                },
+                {
+                    "id": "1",
+                    "width": 80.0
+                },
+                {
+                    "id": "3",
+                    "width": 80.0
+                },
+                {
+                    "id": "4",
+                    "width": 80.0
+                },
+                {
+                    "id": "36",
+                    "width": 90.0
+                },
+                {
+                    "id": "5",
+                    "width": 80.0
+                },
+                {
+                    "id": "6",
+                    "width": 80.0
+                },
+                {
+                    "id": "9",
+                    "width": 80.0
+                },
+                {
+                    "id": "10",
+                    "width": 80.0
+                },
+                {
+                    "id": "14",
+                    "width": 100.0
+                },
+                {
+                    "id": "15",
+                    "width": 100.0
+                },
+                {
+                    "id": "16",
+                    "width": 90.0
+                },
+                {
+                    "id": "7",
+                    "width": 110.0
+                },
+                {
+                    "id": "2",
+                    "width": 80.0
+                },
+                {
+                    "id": "11",
+                    "width": 70.0
+                },
+                {
+                    "id": "12",
+                    "width": 70.0
+                },
+                {
+                    "id": "17",
+                    "width": 80.0
+                },
+                {
+                    "id": "18",
+                    "width": 80.0
+                },
+                {
+                    "id": "19",
+                    "width": 80.0
+                },
+                {
+                    "id": "21",
+                    "width": 80.0
+                },
+                {
+                    "id": "22",
+                    "width": 80.0
+                },
+                {
+                    "id": "23",
+                    "width": 80.0
+                },
+                {
+                    "id": "24",
+                    "width": 80.0
+                }
+            ],
+            "version": "7",
+            "flagMode": "3",
+            "viewMode": "1",
+            "sortOrder": "asc",
+            "zoomLevel": "2",
+            "sortColumnID": "0",
+            "stickyColumn": "0",
+            "propsForMobileWlType": {
+                "0": {
+                    "sortOrder": "asc",
+                    "sortColumnID": "updatedLastTradePrice"
+                },
+                "1": {
+                    "sortOrder": "asc",
+                    "sortColumnID": "0"
+                }
+            },
+            "selectedMobileWlType": "0",
+            "sortColumnIDLazyMode": "16"
+        },
+        "preferredSymbol": "DFM~DFM`B",
+        "sharedWatchlists": [
+            {
+                "id": "12345678",
+                "columns": [
+                    {
+                        "id": "0",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "31",
+                        "width": 120.0
+                    },
+                    {
+                        "id": "13",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "14",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "15",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "16",
+                        "width": 74.0
+                    },
+                    {
+                        "id": "1",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "3",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "4",
+                        "width": 60.0
+                    },
+                    {
+                        "id": "36",
+                        "width": 80.0
+                    },
+                    {
+                        "id": "5",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "6",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "2"
+                    },
+                    {
+                        "id": "7"
+                    },
+                    {
+                        "id": "9"
+                    },
+                    {
+                        "id": "10"
+                    },
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "12"
+                    },
+                    {
+                        "id": "17"
+                    },
+                    {
+                        "id": "18"
+                    },
+                    {
+                        "id": "19"
+                    },
+                    {
+                        "id": "21"
+                    },
+                    {
+                        "id": "22"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "24"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "32"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "39"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "42"
+                    },
+                    {
+                        "id": "8"
+                    }
+                ],
+                "symbols": [
+                    "NSDQ~AAPL",
+                    "AMEX~XLV",
+                    "DFM~AGLTY",
+                    "DFM~AMLAK",
+                    "DFM~ERC",
+                    "DFM~SALAMA",
+                    "DFM~UPP",
+                    "NSDQ~ADP",
+                    "NSDQ~AMD",
+                    "NSDQ~AMZN",
+                    "NSDQ~PAYX"
+                ],
+                "version": "0",
+                "flagMode": "3",
+                "viewMode": "1",
+                "sortOrder": "asc",
+                "zoomLevel": "2",
+                "isNonDefault": "true",
+                "sortColumnID": "0",
+                "stickyColumn": "0",
+                "watchListName": "My Watchlist",
+                "selectedSubMarket": "",
+                "propsForMobileWlType": {
+                    "0": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "updatedLastTradePrice"
+                    },
+                    "1": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "0"
+                    },
+                    "undefined": {
+                        "sortOrder": "desc"
+                    }
+                },
+                "selectedMobileWlType": "0",
+                "sortColumnIDLazyMode": "16"
+            },
+            {
+                "id": "12345678",
+                "columns": [
+                    {
+                        "id": "0",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "31",
+                        "width": 120.0
+                    },
+                    {
+                        "id": "13",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "14",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "15",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "16",
+                        "width": 74.0
+                    },
+                    {
+                        "id": "1",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "3",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "4",
+                        "width": 60.0
+                    },
+                    {
+                        "id": "36",
+                        "width": 80.0
+                    },
+                    {
+                        "id": "5",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "6",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "2"
+                    },
+                    {
+                        "id": "7"
+                    },
+                    {
+                        "id": "9"
+                    },
+                    {
+                        "id": "10"
+                    },
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "12"
+                    },
+                    {
+                        "id": "17"
+                    },
+                    {
+                        "id": "18"
+                    },
+                    {
+                        "id": "19"
+                    },
+                    {
+                        "id": "21"
+                    },
+                    {
+                        "id": "22"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "24"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "32"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "39"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "42"
+                    },
+                    {
+                        "id": "8"
+                    }
+                ],
+                "symbols": [
+                    "NSDQ~AAPL",
+                    "NSDQ~GOOG",
+                    "NSDQ~META",
+                    "DFM~AGLTY",
+                    "DFM~AMLAK",
+                    "AMEX~XLV",
+                    "NSDQ~AMZN",
+                    "DFM~DFM"
+                ],
+                "version": "0",
+                "flagMode": "3",
+                "viewMode": "1",
+                "sortOrder": "asc",
+                "zoomLevel": "2",
+                "isNonDefault": "true",
+                "sortColumnID": "0",
+                "stickyColumn": "0",
+                "watchListName": "Fav 01",
+                "selectedSubMarket": "",
+                "propsForMobileWlType": {
+                    "0": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "updatedLastTradePrice"
+                    },
+                    "1": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "0"
+                    },
+                    "undefined": {
+                        "sortOrder": "desc"
+                    }
+                },
+                "selectedMobileWlType": "0",
+                "sortColumnIDLazyMode": "16"
+            },
+            {
+                "id": "12345678",
+                "columns": [
+                    {
+                        "id": "0",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "31",
+                        "width": 120.0
+                    },
+                    {
+                        "id": "13",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "14",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "15",
+                        "width": 96.0
+                    },
+                    {
+                        "id": "16",
+                        "width": 74.0
+                    },
+                    {
+                        "id": "1",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "3",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "4",
+                        "width": 60.0
+                    },
+                    {
+                        "id": "36",
+                        "width": 80.0
+                    },
+                    {
+                        "id": "5",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "6",
+                        "width": 70.0
+                    },
+                    {
+                        "id": "2"
+                    },
+                    {
+                        "id": "7"
+                    },
+                    {
+                        "id": "9"
+                    },
+                    {
+                        "id": "10"
+                    },
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "12"
+                    },
+                    {
+                        "id": "17"
+                    },
+                    {
+                        "id": "18"
+                    },
+                    {
+                        "id": "19"
+                    },
+                    {
+                        "id": "21"
+                    },
+                    {
+                        "id": "22"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "24"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "32"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "39"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "42"
+                    },
+                    {
+                        "id": "8"
+                    }
+                ],
+                "symbols": [
+                    "NSDQ~GOOG",
+                    "NSDQ~META",
+                    "DFM~AGLTY",
+                    "DFM~AMLAK",
+                    "AMEX~XLV",
+                    "NSDQ~AMZN",
+                    "DFM~DFM"
+                ],
+                "version": "0",
+                "flagMode": "3",
+                "viewMode": "1",
+                "sortOrder": "asc",
+                "zoomLevel": "2",
+                "isNonDefault": "true",
+                "sortColumnID": "0",
+                "stickyColumn": "0",
+                "watchListName": "Read List",
+                "selectedSubMarket": "",
+                "propsForMobileWlType": {
+                    "0": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "updatedLastTradePrice"
+                    },
+                    "1": {
+                        "sortOrder": "asc",
+                        "sortColumnID": "0"
+                    },
+                    "undefined": {
+                        "sortOrder": "desc"
+                    }
+                },
+                "selectedMobileWlType": "0",
+                "sortColumnIDLazyMode": "16"
+            }
+        ],
+        "definedWatchlists": {
+            "version": "NaN",
+            "watchlists": {
+                "S&P500": {
+                    "columns": [
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "36"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "11"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                },
+                "FTSE350": {
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "NSDQ100": {
+                    "columns": [
+                        {
+                            "id": "56"
+                        },
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "36"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "17"
+                        },
+                        {
+                            "id": "18"
+                        },
+                        {
+                            "id": "19"
+                        },
+                        {
+                            "id": "21"
+                        },
+                        {
+                            "id": "22"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "31"
+                        },
+                        {
+                            "id": "32"
+                        },
+                        {
+                            "id": "33"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "37"
+                        },
+                        {
+                            "id": "38"
+                        },
+                        {
+                            "id": "39"
+                        },
+                        {
+                            "id": "40"
+                        },
+                        {
+                            "id": "41"
+                        },
+                        {
+                            "id": "42"
+                        },
+                        {
+                            "id": "43"
+                        },
+                        {
+                            "id": "44"
+                        },
+                        {
+                            "id": "45"
+                        },
+                        {
+                            "id": "46"
+                        },
+                        {
+                            "id": "47"
+                        },
+                        {
+                            "id": "48"
+                        },
+                        {
+                            "id": "49"
+                        },
+                        {
+                            "id": "50"
+                        },
+                        {
+                            "id": "51"
+                        },
+                        {
+                            "id": "52"
+                        },
+                        {
+                            "id": "53"
+                        },
+                        {
+                            "id": "54"
+                        },
+                        {
+                            "id": "55"
+                        },
+                        {
+                            "id": "57"
+                        },
+                        {
+                            "id": "58"
+                        },
+                        {
+                            "id": "59"
+                        },
+                        {
+                            "id": "61"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        },
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                },
+                "Bonds / Sukuk": {
+                    "columns": [
+                        {
+                            "id": "56"
+                        },
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "28"
+                        },
+                        {
+                            "id": "29"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "35"
+                        },
+                        {
+                            "id": "38"
+                        },
+                        {
+                            "id": "41"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                }
+            }
+        },
+        "selectedWatchList": "12345681",
+        "mobileWlDisplayMode": "0",
+        "fullMarketWatchlists": {
+            "version": "718",
+            "watchlists": {
+                "ASE": {
+                    "columns": [
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "36"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "17"
+                        },
+                        {
+                            "id": "18"
+                        },
+                        {
+                            "id": "19"
+                        },
+                        {
+                            "id": "21"
+                        },
+                        {
+                            "id": "22"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "31"
+                        },
+                        {
+                            "id": "32"
+                        },
+                        {
+                            "id": "33"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "37"
+                        },
+                        {
+                            "id": "38"
+                        },
+                        {
+                            "id": "39"
+                        },
+                        {
+                            "id": "40"
+                        },
+                        {
+                            "id": "41"
+                        },
+                        {
+                            "id": "42"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSector": "*",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "CSE": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 28.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "15",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "36",
+                            "width": 81.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "9",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "10",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "11",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "12",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "2",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "42",
+                            "width": 94.0
+                        },
+                        {
+                            "id": "21",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "22",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "23",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "24",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "41",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "39",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "7",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "30",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "38"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "desc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "16",
+                    "stickyColumn": "0",
+                    "selectedSubMarket": "S",
+                    "sortOrderLazyMode": "desc",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "desc",
+                            "sortColumnID": "16"
+                        },
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                },
+                "DFM": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "desc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSector": "*",
+                    "selectedSubMarket": "R",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortColumnID": "0"
+                        },
+                        "undefined": {
+                            "sortOrder": "desc"
+                        }
+                    }
+                },
+                "DSM": {
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "desc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "desc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "ISE": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "KSE": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 28.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "15",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "36",
+                            "width": 81.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "9",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "10",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "11",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "12",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "2",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "42",
+                            "width": 94.0
+                        },
+                        {
+                            "id": "21",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "22",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "23",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "24",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "41",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "39",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "7",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "30",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "38"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSubMarket": "M",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "MSM": {
+                    "columns": [
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "36"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "17"
+                        },
+                        {
+                            "id": "18"
+                        },
+                        {
+                            "id": "19"
+                        },
+                        {
+                            "id": "21"
+                        },
+                        {
+                            "id": "22"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "31"
+                        },
+                        {
+                            "id": "32"
+                        },
+                        {
+                            "id": "33"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "37"
+                        },
+                        {
+                            "id": "38"
+                        },
+                        {
+                            "id": "39"
+                        },
+                        {
+                            "id": "40"
+                        },
+                        {
+                            "id": "41"
+                        },
+                        {
+                            "id": "42"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "desc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortColumnID": "0"
+                        },
+                        "undefined": {
+                            "sortOrder": "desc"
+                        }
+                    }
+                },
+                "ADSM": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSector": "*",
+                    "selectedSubMarket": "R",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortColumnID": "0"
+                        },
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                },
+                "CASE": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 28.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "15",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "36",
+                            "width": 81.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "9",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "10",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "11",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "12",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "2",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "42",
+                            "width": 94.0
+                        },
+                        {
+                            "id": "21",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "22",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "23",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "24",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "41",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "39",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "7",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "30",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "38"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSector": "*",
+                    "selectedSubMarket": "202",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "DGCX": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "sortOrder": "desc",
+                    "selectedSubMarket": "DGB"
+                },
+                "DIFX": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "2"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "36"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSubMarket": "F",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                },
+                "TDWL": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "42",
+                            "width": 94.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "2",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "15",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "36",
+                            "width": 81.0
+                        },
+                        {
+                            "id": "7",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "40",
+                            "width": 364.0
+                        },
+                        {
+                            "id": "9",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "10",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "11",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "12",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "17",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "21",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "22",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "23",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "24",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "30",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "31",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "32",
+                            "width": 90.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "37",
+                            "width": 125.0
+                        },
+                        {
+                            "id": "38",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "39",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "41",
+                            "width": 70.0
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "desc",
+                    "zoomLevel": "2",
+                    "isNonDefault": "true",
+                    "sortColumnID": "16",
+                    "stickyColumn": "0",
+                    "selectedSector": "*",
+                    "selectedSubMarket": "1",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "desc",
+                            "sortColumnID": "16"
+                        },
+                        "undefined": {
+                            "sortOrder": "asc"
+                        }
+                    }
+                },
+                "ISEFO": {
+                    "columns": [
+                        {
+                            "id": "0"
+                        },
+                        {
+                            "id": "1"
+                        },
+                        {
+                            "id": "3"
+                        },
+                        {
+                            "id": "4"
+                        },
+                        {
+                            "id": "36"
+                        },
+                        {
+                            "id": "7"
+                        },
+                        {
+                            "id": "5"
+                        },
+                        {
+                            "id": "6"
+                        },
+                        {
+                            "id": "9"
+                        },
+                        {
+                            "id": "10"
+                        },
+                        {
+                            "id": "14"
+                        },
+                        {
+                            "id": "16"
+                        },
+                        {
+                            "id": "15"
+                        },
+                        {
+                            "id": "30"
+                        },
+                        {
+                            "id": "8"
+                        },
+                        {
+                            "id": "11"
+                        },
+                        {
+                            "id": "12"
+                        },
+                        {
+                            "id": "13"
+                        },
+                        {
+                            "id": "17"
+                        },
+                        {
+                            "id": "18"
+                        },
+                        {
+                            "id": "19"
+                        },
+                        {
+                            "id": "21"
+                        },
+                        {
+                            "id": "22"
+                        },
+                        {
+                            "id": "23"
+                        },
+                        {
+                            "id": "24"
+                        },
+                        {
+                            "id": "31"
+                        },
+                        {
+                            "id": "32"
+                        },
+                        {
+                            "id": "33"
+                        },
+                        {
+                            "id": "34"
+                        },
+                        {
+                            "id": "37"
+                        },
+                        {
+                            "id": "38"
+                        },
+                        {
+                            "id": "39"
+                        },
+                        {
+                            "id": "40"
+                        },
+                        {
+                            "id": "41"
+                        },
+                        {
+                            "id": "42"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "zoomLevel": "2",
+                    "stickyColumn": "0"
+                },
+                "LKCSE": {
+                    "columns": [
+                        {
+                            "id": "0",
+                            "width": 103.0
+                        },
+                        {
+                            "id": "13",
+                            "width": 28.0
+                        },
+                        {
+                            "id": "14",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "15",
+                            "width": 102.0
+                        },
+                        {
+                            "id": "16",
+                            "width": 79.0
+                        },
+                        {
+                            "id": "1",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "3",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "4",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "36",
+                            "width": 81.0
+                        },
+                        {
+                            "id": "5",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "6",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "9",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "10",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "11",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "12",
+                            "width": 60.0
+                        },
+                        {
+                            "id": "2",
+                            "width": 71.0
+                        },
+                        {
+                            "id": "18",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "19",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "42",
+                            "width": 94.0
+                        },
+                        {
+                            "id": "21",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "22",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "23",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "24",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "34",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "33",
+                            "width": 120.0
+                        },
+                        {
+                            "id": "41",
+                            "width": 70.0
+                        },
+                        {
+                            "id": "39",
+                            "width": 85.0
+                        },
+                        {
+                            "id": "7",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "30",
+                            "width": 113.0
+                        },
+                        {
+                            "id": "38"
+                        }
+                    ],
+                    "flagMode": "3",
+                    "viewMode": "1",
+                    "sortOrder": "asc",
+                    "zoomLevel": "2",
+                    "sortColumnID": "0",
+                    "stickyColumn": "0",
+                    "selectedSubMarket": "N",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortOrder": "asc",
+                            "sortColumnID": "0"
+                        }
+                    }
+                }
+            }
+        },
+        "defaultWatchlistOrder": [
+            "My Watchlist",
+            "Fav 01",
+            "Read List"
+        ],
+        "sortedWatchlistsOrder": [
+            "My Watchlist",
+            "Fav 01",
+            "Read List"
+        ]
+    }
+}

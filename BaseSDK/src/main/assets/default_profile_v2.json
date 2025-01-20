@@ -1,0 +1,544 @@
+{
+    "watchList": {
+        "defaultWatchlistOrder": [
+            "My Watchlist",
+            "NSDQ100",
+            "GTN CFDs",
+            "HKEX_DEF",
+            "SGX_DEF",
+            "EURO STOXX",
+            "GTNFI",
+            "GTNSPOT",
+            "Bonds / Sukuk",
+            "ADX",
+            "ASE (D)",
+            "BK (D)",
+            "BSE (D)",
+            "DFM (D)",
+            "HKEX (D)",
+            "PKSE (D)",
+            "SGX",
+            "TDWL (D)"
+        ],
+        "definedWatchlists": {
+            "version": "0",
+            "watchlists": {
+                "Bonds / Sukuk": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "FTSE350": {
+                    "flagMode": "",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortColumnID": "",
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "NSDQ100": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "1": {
+                            "sortColumnID": "",
+                            "sortOrder": ""
+                        },
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "S&P500": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                }
+            }
+        },
+        "expand": {
+            "selectedWebWlType": "",
+            "version": ""
+        },
+        "fullMarketWatchlists": {
+            "version": "0",
+            "watchlists": {
+                "ADX": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "ASE": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "CSE": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                },
+                "DIFX": {
+                    "columns": [],
+                    "flagMode": "",
+                    "isNonDefault": "",
+                    "propsForMobileWlType": {
+                        "undefined": {
+                            "sortOrder": ""
+                        }
+                    },
+                    "sortColumnID": "",
+                    "sortOrder": "",
+                    "stickyColumn": "",
+                    "viewMode": "",
+                    "zoomLevel": ""
+                }
+            }
+        },
+        "mobileWlDisplayMode": "0",
+        "preferredSymbol": "SGX~QES",
+        "selectedWatchList": "12345678",
+        "sharedWatchlists": [
+            {
+                "columns": [],
+                "displayWLName": "My Watchlist",
+                "flagMode": "3",
+                "id": "12345678",
+                "isNonDefault": "",
+                "propsForMobileWlType": {
+                    "0": {
+                        "sortColumnID": "updatedLastTradePrice",
+                        "sortOrder": "asc"
+                    },
+                    "1": {
+                        "sortColumnID": "volume",
+                        "sortOrder": "asc"
+                    }
+                },
+                "selectedMobileWlType": "0",
+                "selectedSubMarket": "",
+                "sortColumnID": "16",
+                "sortColumnIDLazyMode": "16",
+                "sortOrder": "desc",
+                "stickyColumn": "0",
+                "symbols": [
+                    "NSDQ~AAPL",
+                    "NSDQ~TSLA",
+                    "NSDQ~GOOG"
+                ],
+                "type": "custom",
+                "version": "1",
+                "viewMode": "1",
+                "watchListName": "My Watchlist",
+                "zoomLevel": "2"
+            }
+        ],
+        "shrink": {
+            "selectedWebWlType": "",
+            "version": ""
+        },
+        "smartWatchlist": {
+            "columns": [],
+            "flagMode": "",
+            "propsForMobileWlType": {
+                "0": {
+                    "sortColumnID": "",
+                    "sortOrder": ""
+                },
+                "1": {
+                    "sortColumnID": "",
+                    "sortOrder": ""
+                }
+            },
+            "selectedMobileWlType": "",
+            "sortColumnID": "",
+            "sortColumnIDLazyMode": "",
+            "sortOrder": "",
+            "stickyColumn": "",
+            "version": "",
+            "viewMode": "",
+            "zoomLevel": ""
+        },
+        "sortedWatchlistsOrder": [
+            "My Watchlist",
+            "NSDQ100",
+            "GTN CFDs",
+            "HKEX_DEF",
+            "SGX_DEF",
+            "EURO STOXX",
+            "GTNFI",
+            "GTNSPOT",
+            "Bonds / Sukuk",
+            "ADX",
+            "ASE (D)",
+            "BK (D)",
+            "BSE (D)",
+            "DFM (D)",
+            "HKEX (D)",
+            "PKSE (D)",
+            "SGX",
+            "TDWL (D)"
+        ],
+        "version": "11"
+    },
+    "sharedPreferences": {
+        "version": "19",
+        "isNewUser": "true",
+        "loginRedirectUri": "secure",
+        "workspaces": "{\"workspaceDefault\":{\"widgets\":{\"widget1\":{\"openedTabs\":[\"watchList\"],\"activeTab\":\"watchList\"},\"widget2\":{\"openedTabs\":[\"standardQuote\"],\"activeTab\":\"standardQuote\"},\"widget3\":{\"openedTabs\":[\"advOrderTicket\"],\"activeTab\":\"advOrderTicket\"},\"widget4\":{\"openedTabs\":[\"orderList\",\"portfolioAllocation\"],\"activeTab\":\"orderList\"}},\"linkedWidgets\":{\"cyan\":[\"watchList~widget1\",\"standardQuote~widget2\",\"advOrderTicket~widget3\"]}}}",
+        "trading": {
+            "version": "0",
+            "buyOrderTicket": {
+                "defaultPrice": "0",
+                "defaultSize": 1,
+                "value": 0,
+                "tradingCurrency": "",
+                "shares": 0,
+                "contract": 0
+            },
+            "sellOrderTicket": {
+                "defaultPrice": "1",
+                "defaultSize": 5
+            },
+            "orderTicket": {
+                "outsideRTHOption": 2
+            }
+        },
+        "analysis": {
+            "version": "9",
+            "portfolio": {
+                "defaultPeriod": "YT",
+                "indexPerformanceBenchmark": {
+                    "exchange": "TDWL",
+                    "symbol": "TASI"
+                },
+                "financialRatioBenchmark": {
+                    "defaultValue": {
+                        "value": "TDWL",
+                        "viewValue": "TDWL"
+                    },
+                    "options": [
+                        "TDWL",
+                        "DFM",
+                        "CASE",
+                        "ADSM"
+                    ]
+                },
+                "topOpenPositionsBySize": {
+                    "sortColumn": "marketValue",
+                    "sortOrder": "asc"
+                },
+                "cashAccountList": [],
+                "selectedMobileColumns": [],
+                "selectedwebColumns": []
+            },
+            "advPortfolio": {
+                "advPortfolioWebCols": [],
+                "advPortfolioMobileCols": [],
+                "advPortfolioFixedIncomeWebCols": [],
+                "advPortfolioFixedIncomeMobileCols": []
+            },
+            "tradingInterest": {
+                "trackSymbols": "3MO"
+            }
+        },
+        "investmentStore": {
+            "newAssetClassConfigs": [
+                {
+                    "requestType": 0,
+                    "assetClass": ""
+                }
+            ],
+            "newAssetClassReminder": [
+                {
+                    "campainId": 0,
+                    "initializedDate": "",
+                    "weeksToRemind": 2
+                }
+            ]
+        },
+        "notifications": {
+            "version": "0",
+            "settings": {
+                "appNotification": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16"
+                ],
+                "email": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16"
+                ]
+            }
+        },
+        "display": {
+            "version": "0",
+            "theme": {
+                "activeTheme": "LIGHT"
+            },
+            "depthDisplayLevels": "1",
+            "depthDisplayViews": "2",
+            "tAndSCount": "30",
+            "AccSummaryCustomDecimalsEnabled": "false",
+            "AccSummaryCustomDecimalsCount": 5,
+            "searchSelectedExchanges": ""
+        },
+        "rubixPreferences": {
+            "version": "2",
+            "attribution": {
+                "defaultValue": "1"
+            },
+            "appHeader": {
+                "selectedType": "2",
+                "selectedExchange": "",
+                "displayMode": "0",
+                "indicesHeader": {
+                    "US": [
+                        "S&P~I:SP500",
+                        "DJI~I:DJI",
+                        "NSDQGI~I:NDX",
+                        "GTISEP~EWTIUSDBR.SP",
+                        "GTISPM~SXAUUSDOZ.SP",
+                        "BTC~BTC/USD"
+                    ]
+                }
+            },
+            "gms": {
+                "region": "*",
+                "category": "*",
+                "sortingProps": {
+                    "1": {
+                        "sortColumnID": "0",
+                        "sortOrder": "asc"
+                    },
+                    "2": {
+                        "sortColumnID": "0",
+                        "sortOrder": "asc"
+                    },
+                    "3": {
+                        "sortColumnID": "0",
+                        "sortOrder": "asc"
+                    },
+                    "4": {
+                        "sortColumnID": "0",
+                        "sortOrder": "asc"
+                    },
+                    "5": {
+                        "sortColumnID": "0",
+                        "sortOrder": "asc"
+                    }
+                }
+            },
+            "releaseNote": {
+                "previewedVersion": ""
+            }
+        },
+        "charting": {
+            "version": "0",
+            "favoriteStudyList": [
+                "ATR Bands",
+                "Bollinger Bands",
+                "CCI",
+                "macd",
+                "Momentum",
+                "ma",
+                "rsi",
+                "stochastics",
+                "Williams %R"
+            ],
+            "chartLayout": "",
+            "chartLayoutMobile": "",
+            "comparisonSymbols": "",
+            "mobileComparisonSymbols": "",
+            "drawings": ""
+        },
+        "marketDepth": {
+            "usSymbol": {
+                "isMarketCenterAvailable": "true"
+            }
+        },
+        "helpGuide": {
+            "lastAutoInvokedDate": ""
+        },
+        "corporateActions": {
+            "upcomingEvents": {
+                "eventsViewed": false,
+                "eventsViewedDate": ""
+            }
+        },
+        "paymentGateway": {
+            "telda": {
+                "customerId": "",
+                "disbursementId": "",
+                "collectionId": "",
+                "depositSelectedPortfolio": "",
+                "withdrawSelectedPortfolio": ""
+            }
+        },
+        "workspaceOpenedTabs": "{\"predefinedTabs\":[\"workspaceDefault\"],\"customWSs\":[],\"activeTab\":\"workspaceDefault\",\"currentWorkspaceId\":0}",
+        "usSymbol": {
+            "isMarketCenterAvailable": "true",
+            "version": "7"
+        }
+    },
+    "WEB": {
+        "version": "0",
+        "topBarMarketStatus": {
+            "defaultExchange": "DFM",
+            "defaultIndex": "DFMGI"
+        },
+        "charting": {
+            "defaultChartSpan": "1_year",
+            "defaultChartSpanForBasicMode": "1_day",
+            "defaultIntraDayPeriodicity": "1_minute",
+            "defaultBacklogPeriodicity": "1_day",
+            "defaultChartType": "mountain",
+            "defaultAdvancedChartType": "candle"
+        },
+        "rubixPreferences": {
+            "appHeader": {
+                "selectedIndex": "DFMGI",
+                "selectedExchange": "DFM"
+            }
+        },
+        "screener": {
+            "maxMobileColumns": 3,
+            "maxWebColumns": 11,
+            "screenerPageSize": 20,
+            "fixedColumns": [
+                "_symbol",
+                "_companyDesc",
+                "_currency"
+            ],
+            "MobileFixedColumns": [
+                "_symbol"
+            ],
+            "selectableColumns": [
+                "_country",
+                "_price",
+                "_pctChange",
+                "_wk52High",
+                "_wk52Low",
+                "_volume"
+            ],
+            "regionSelectedColumn": "_sector",
+            "gicsSelectedColumn": "_gics",
+            "mobileSortColumns": [
+                "_price",
+                "_pctChange",
+                "_volume"
+            ]
+        },
+        "tourGuide": {
+            "isOneStopTradeCompleted": "false",
+            "isPortfolioCompleted": "false",
+            "isWealthPortfolioCompleted": "false",
+            "isFocusListCompleted": "false",
+            "isMubasherInvestCompleted": "false",
+            "isMobileTourGuideCompleted": "false"
+        },
+        "fullMarketTimeAndSales": {
+            "version": "0",
+            "selectedExchangeCode": ""
+        },
+        "portfolio": {
+            "decimalPlaces": -2
+        }
+    },
+    "MOB": {
+        "version": "1",
+        "appRating": {
+            "version": "1",
+            "lastReviewedDate": "1728466378690"
+        }
+    }
+}
