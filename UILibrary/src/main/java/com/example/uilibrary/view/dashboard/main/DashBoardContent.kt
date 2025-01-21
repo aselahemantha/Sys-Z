@@ -1,13 +1,9 @@
 package com.example.uilibrary.view.dashboard.main
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
-import androidx.compose.animation.slideInHorizontally
-import androidx.compose.animation.slideOutHorizontally
-import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,8 +11,6 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.pullrefresh.PullRefreshIndicator
 import androidx.compose.material.pullrefresh.pullRefresh
@@ -40,10 +34,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.buildAnnotatedString
-import androidx.compose.ui.text.style.TextDecoration
-import androidx.compose.ui.text.withStyle
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.distinctUntilChanged
 import androidx.navigation.NavHostController
@@ -54,7 +44,6 @@ import com.example.uilibrary.banners.SlowConnection
 import com.example.uilibrary.common.BottomNavBar
 import com.example.uilibrary.coreui.NavigationItem
 import com.example.uilibrary.coreui.Routes
-import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
 import com.example.uilibrary.elements.popup.snackbar.CustomSnackbarHost
 import com.example.uilibrary.elements.popup.snackbar.CustomSnackbarVisuals
 import com.example.uilibrary.elements.popup.snackbar.SnackbarSeverity
@@ -65,7 +54,7 @@ import com.example.uilibrary.view.dashboard.main.bottomBar.NavigationEffects
 import com.example.uilibrary.view.dashboard.main.bottomBar.composable
 import com.example.uilibrary.view.dashboard.main.bottomBar.isOnboardRoute
 import com.example.uilibrary.view.dashboard.main.bottomBar.isShowBottomNavigation
-import com.example.uilibrary.view.dashboard.main.bottomBar.isTabo1Route
+import com.example.uilibrary.view.dashboard.main.bottomBar.isTab01Route
 import com.example.uilibrary.view.dashboard.tab01.Tab01Screen
 import com.example.uilibrary.view.dashboard.tab02.Tab02Screen
 import com.example.uilibrary.view.dashboard.tab03.Tab03Screen
@@ -77,8 +66,6 @@ import com.gtn.basesdk.util.enums.ConnectionState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import noRippleClickable
-import java.util.concurrent.CompletableFuture
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
@@ -117,7 +104,7 @@ fun GetDashboardContent(
     LaunchedEffect(navBackStackEntry?.destination) {
         showBottomNavBar.value = isShowBottomNavigation(navBackStackEntry = navBackStackEntry, destination = destination)
         isOnboardRoute.value = isOnboardRoute(navBackStackEntry = navBackStackEntry, destination = destination)
-        isOnTabo1Screen.value = isTabo1Route(navBackStackEntry = navBackStackEntry, destination = destination)
+        isOnTabo1Screen.value = isTab01Route(navBackStackEntry = navBackStackEntry, destination = destination)
         viewmodel.onCompleteOnboard(isComplete = !isOnboardRoute.value)
     }
 

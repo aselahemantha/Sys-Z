@@ -36,6 +36,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.basesdk.domain.model.InstitutionConfig
+import com.example.basesdk.domain.model.NavItem
 import com.example.uilibrary.R
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
 import com.example.uilibrary.coreui.theme.NoRippleTheme
@@ -58,8 +59,8 @@ fun BottomNavBar(
     var backPressed by remember { mutableStateOf(false) }
     val priceColor by animateColorAsState(
         targetValue =
-        if (baseNotification.priceConnectionState.equals(ConnectionState.CONNECTED)) {
-            if (baseNotification.pricePulseState.equals(PulseState.UP)) {
+        if (baseNotification.priceConnectionState == ConnectionState.CONNECTED) {
+            if (baseNotification.pricePulseState == PulseState.UP) {
                 Color.Green
             } else {
                 Color.Green.copy(alpha = 0.7f)
@@ -67,11 +68,12 @@ fun BottomNavBar(
         } else {
             Color.LightGray
         },
+        label = "",
     )
     val tradeColor by animateColorAsState(
         targetValue =
-        if (baseNotification.tradeConnectionState.equals(ConnectionState.CONNECTED)) {
-            if (baseNotification.tradePulseState.equals(PulseState.UP)) {
+        if (baseNotification.tradeConnectionState == ConnectionState.CONNECTED) {
+            if (baseNotification.tradePulseState == PulseState.UP) {
                 Color.Red
             } else {
                 Color.Red.copy(alpha = 0.5f)
@@ -79,6 +81,7 @@ fun BottomNavBar(
         } else {
             Color.LightGray
         },
+        label = "",
     )
 
     val dispatcherOwner = LocalOnBackPressedDispatcherOwner.current
@@ -111,45 +114,53 @@ fun BottomNavBar(
                 contentColor = LocalCustomColorsPalette.current.figmaColors.Background0,
                 tonalElevation = 10.dp,
             ) {
-                institutionConfig?.let { config ->
-                    val bottomNavItems = config.NavConfig.BottomNav
 
-                    bottomNavItems.forEachIndexed { index, item ->
-                        var routeVal = Routes.fromRoute(item.route)
-                        val iconColor =
-                            if (selectedTabIndex == routeVal) {
-                                LocalCustomColorsPalette.current.figmaColors.Primary0
-                            } else {
-                                LocalCustomColorsPalette.current.figmaColors.Primary30
-                            }
-                        BottomNavigationItem(
-                            modifier = Modifier.height(55f.scaleHeight()),
-                            icon = {
-                                Image(
-                                    painter = painterResource(id = routeVal.imageRes),
-                                    contentDescription = "bottom navigation icons",
-                                    modifier =
-                                    Modifier
-                                        .size(24f.scaleWidth())
-                                        .testTag(routeVal.route),
-                                    colorFilter = ColorFilter.tint(color = iconColor),
-                                )
-                            },
-                            label = {
-                                Text(
-                                    text = stringResource(id = routeVal.nameRes),
-                                    color = iconColor,
-                                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
-                                    fontWeight = FontWeight.Medium,
-                                    fontSize = 11f.scaleFontSize(),
-                                    textAlign = TextAlign.Center,
-                                    maxLines = 1,
-                                )
-                            },
-                            selected = (selectedTabIndex == routeVal),
-                            onClick = { onSelect(routeVal) },
-                        )
-                    }
+                val bottomNavItems = listOf(
+                    NavItem(
+                        route = "tab01-home",
+                        langKey = "Watchlist",
+                        icon = R.drawable.ic_watchlist),
+                    NavItem(route = "tab02-portfolio", label = "Home", icon = R.drawable.ic_home), // Replace icon with actual resource
+                    NavItem(route = "tab03-watchlist", label = "Portfolio", icon = R.drawable.ic_portfolio), // Replace icon with actual resource
+                    NavItem(route = "tab04-trade", label = "Trade", icon = R.drawable.ic_trade), // Replace icon with actual resource
+                    NavItem(route = "tab05-discover", label = "Discover", icon = R.drawable.ic_discover) // Replace icon with actual resource
+                )
+
+                bottomNavItems.forEachIndexed { index, item ->
+                    var routeVal = Routes.fromRoute(item.route)
+                    val iconColor =
+                        if (selectedTabIndex == routeVal) {
+                            LocalCustomColorsPalette.current.figmaColors.Primary0
+                        } else {
+                            LocalCustomColorsPalette.current.figmaColors.Primary30
+                        }
+                    BottomNavigationItem(
+                        modifier = Modifier.height(55f.scaleHeight()),
+                        icon = {
+                            Image(
+                                painter = painterResource(id = routeVal.imageRes),
+                                contentDescription = "bottom navigation icons",
+                                modifier =
+                                Modifier
+                                    .size(24f.scaleWidth())
+                                    .testTag(routeVal.route),
+                                colorFilter = ColorFilter.tint(color = iconColor),
+                            )
+                        },
+                        label = {
+                            Text(
+                                text = stringResource(id = routeVal.nameRes),
+                                color = iconColor,
+                                fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                fontWeight = FontWeight.Medium,
+                                fontSize = 11f.scaleFontSize(),
+                                textAlign = TextAlign.Center,
+                                maxLines = 1,
+                            )
+                        },
+                        selected = (selectedTabIndex == routeVal),
+                        onClick = { onSelect(routeVal) },
+                    )
                 }
             }
             Row(

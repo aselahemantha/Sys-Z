@@ -75,7 +75,7 @@ fun isOnboardRoute(
     }
 }
 
-fun isTabo1Route(
+fun isTab01Route(
     navBackStackEntry: NavBackStackEntry?,
     destination: Any?,
 ): Boolean {

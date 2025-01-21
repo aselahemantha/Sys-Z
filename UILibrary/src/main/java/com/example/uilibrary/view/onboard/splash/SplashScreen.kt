@@ -19,11 +19,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
-import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.uilibrary.R
 import com.example.uilibrary.banners.NoConnection
@@ -34,7 +32,6 @@ import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
 import com.example.uilibrary.util.scale.scaleWidth
 import com.gtn.basesdk.util.enums.ConnectionState
-import com.gtn.uilibrary.view.onboard.splash.SplashViewModel
 import kotlinx.coroutines.delay
 
 @Composable
@@ -51,7 +48,7 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
 //            } else {
 //                textFieldValue = fetchData.message.toString()
 //            }
-            delay(350)
+            delay(3500)
             viewModel.navigateToLogin()
         }
     }
@@ -73,7 +70,7 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
             Spacer(modifier = Modifier.height(300f.scaleHeight()))
 
             Image(
-                painter = painterResource(id = R.drawable.device_health_splash),
+                painter = painterResource(id = R.drawable.sysz_splash_2),
                 contentDescription = "gtn logo",
                 modifier =
                 Modifier
@@ -85,18 +82,25 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
 
             Row {
                 TextComponent(
-                    text = AnnotatedString("Abc"),
+                    text = AnnotatedString(stringResource(id = R.string.splash_text)),
+                    fontSize = 12f.scaleFontSize(),
+                    fontColor = LocalCustomColorsPalette.current.figmaColors.Typography80,
+                )
+            }
+            Row {
+                TextComponent(
+                    text = AnnotatedString(stringResource(id = R.string.brand_name)),
                     fontSize = 12f.scaleFontSize(),
                     fontColor = LocalCustomColorsPalette.current.figmaColors.Typography80,
                 )
                 Spacer(modifier = Modifier.width(4f.scaleWidth()))
                 Image(
-                    painter = painterResource(R.drawable.device_health_splash),
-                    contentDescription = "GTN icon",
+                    painter = painterResource(R.drawable.sysz_splash_1),
+                    contentDescription = "Innovate X Logo",
                     modifier =
-                        Modifier
-                            .width(16f.scaleWidth())
-                            .height(15f.scaleHeight())
+                    Modifier
+                        .width(16f.scaleWidth())
+                        .height(16f.scaleHeight())
                 )
             }
         }

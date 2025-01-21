@@ -1,4 +1,4 @@
-package com.gtn.uilibrary.view.onboard.splash
+package com.example.uilibrary.view.onboard.splash
 
 import android.content.Context
 import androidx.core.splashscreen.SplashScreen

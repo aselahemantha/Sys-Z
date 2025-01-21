@@ -39,16 +39,11 @@ import com.example.uilibrary.util.scale.scaleWidth
 @Composable
 fun NoConnection(
     isVisible: Boolean = false,
-    title: String = "No Internet Connection Found",
+    title: String = "No Internet Connection Found!",
+    subtitle: String = "Please check your internet settings",
 ) {
     var color = LocalCustomColorsPalette.current.figmaColors.Background0
 
-    // Auto-dismiss logic
-//    LaunchedEffect(isVisible) {
-//        if (isVisible) {
-//            delay(2000)
-//        }
-//    }
     AnimatedVisibility(
         visible = isVisible,
         enter =
@@ -83,7 +78,7 @@ fun NoConnection(
                 horizontalArrangement = Arrangement.Start,
             ) {
                 Icon(
-                    imageVector = ImageVector.vectorResource(id = R.drawable.device_health_splash),
+                    imageVector = ImageVector.vectorResource(id = R.drawable.no_internet),
                     contentDescription = null,
                     tint = LocalCustomColorsPalette.current.figmaColors.Negative0,
                     modifier = Modifier.size(24f.scaleWidth()),
@@ -106,7 +101,7 @@ fun NoConnection(
                         textAlign = TextAlign.Left,
                     )
                     Text(
-                        text = "Please check your internet settings",
+                        text = subtitle,
                         fontSize = 14f.scaleFontSize(),
                         fontWeight = FontWeight.Normal,
                         fontFamily = FontFamily(Font(R.font.montserrat_regular)),

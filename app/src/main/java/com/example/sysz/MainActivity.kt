@@ -12,14 +12,12 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Density
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.FragmentActivity
@@ -29,9 +27,8 @@ import com.example.uilibrary.util.enums.AppTheme
 import com.example.uilibrary.view.dashboard.main.GetDashboardContent
 import com.example.uilibrary.view.onboard.splash.SplashActivity
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.gtn.uilibrary.view.onboard.splash.SplashViewModel
+import com.example.uilibrary.view.onboard.splash.SplashViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : FragmentActivity() {

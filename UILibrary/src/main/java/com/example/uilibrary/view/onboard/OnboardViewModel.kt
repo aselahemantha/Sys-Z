@@ -30,7 +30,7 @@ open class OnboardViewModel
 
         fun getConnectivity() {
             context.let {
-                connectivityCheckerUseCase.let { usecaseOut ->
+                connectivityCheckerUseCase.let {
                     viewModelScope.launch {
                         connectivityCheckerUseCase.invoke(context).collect { state ->
                             networkConnectivityStateIn.emit(state)
