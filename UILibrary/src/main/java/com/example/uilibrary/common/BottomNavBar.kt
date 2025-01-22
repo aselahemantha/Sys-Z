@@ -117,13 +117,35 @@ fun BottomNavBar(
 
                 val bottomNavItems = listOf(
                     NavItem(
-                        route = "tab01-home",
-                        langKey = "Watchlist",
-                        icon = R.drawable.ic_watchlist),
-                    NavItem(route = "tab02-portfolio", label = "Home", icon = R.drawable.ic_home), // Replace icon with actual resource
-                    NavItem(route = "tab03-watchlist", label = "Portfolio", icon = R.drawable.ic_portfolio), // Replace icon with actual resource
-                    NavItem(route = "tab04-trade", label = "Trade", icon = R.drawable.ic_trade), // Replace icon with actual resource
-                    NavItem(route = "tab05-discover", label = "Discover", icon = R.drawable.ic_discover) // Replace icon with actual resource
+                        route = "tab01-device",
+                        langKey = "Device",
+                        icon = "Device",
+                        screenId = "Device",
+                        ),
+                    NavItem(
+                        route = "tab02-battery",
+                        langKey = "Battery",
+                        icon = "Battery",
+                        screenId = "Battery",
+                    ),
+                    NavItem(
+                        route = "tab03-temp",
+                        langKey = "Temperature",
+                        icon = "Temperature",
+                        screenId = "Temperature",
+                    ),
+                    NavItem(
+                        route = "tab04-sensors",
+                        langKey = "Sensors",
+                        icon = "Sensors",
+                        screenId = "Sensors",
+                    ),
+                    NavItem(
+                        route = "tab05-about",
+                        langKey = "About",
+                        icon = "About",
+                        screenId = "About",
+                    )
                 )
 
                 bottomNavItems.forEachIndexed { index, item ->
@@ -135,7 +157,7 @@ fun BottomNavBar(
                             LocalCustomColorsPalette.current.figmaColors.Primary30
                         }
                     BottomNavigationItem(
-                        modifier = Modifier.height(55f.scaleHeight()),
+                        modifier = Modifier.height(80f.scaleHeight()),
                         icon = {
                             Image(
                                 painter = painterResource(id = routeVal.imageRes),

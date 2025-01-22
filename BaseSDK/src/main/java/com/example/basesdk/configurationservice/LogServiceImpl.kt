@@ -18,7 +18,7 @@ package com.example.basesdk.configurationservice
 
 import com.google.firebase.Firebase
 import com.google.firebase.crashlytics.crashlytics
-import com.gtn.basesdk.domain.configurationservice.LogService
+import com.example.basesdk.domain.configurationservice.LogService
 import javax.inject.Inject
 
 class LogServiceImpl

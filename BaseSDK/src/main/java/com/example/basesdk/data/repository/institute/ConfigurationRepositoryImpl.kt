@@ -4,7 +4,7 @@ import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.example.basesdk.domain.configurationservice.ConfigurationService
-import com.gtn.basesdk.domain.configurationservice.LogService
+import com.example.basesdk.domain.configurationservice.LogService
 import com.example.basesdk.domain.model.InstitutionConfig
 import com.example.basesdk.domain.repository.institute.ConfigurationRepository
 import com.example.basesdk.util.LogMe

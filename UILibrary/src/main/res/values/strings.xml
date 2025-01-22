@@ -2,4 +2,9 @@
 <resources>
     <string name="splash_text">Made in Sri Lanka with ♥</string>
     <string name="brand_name">innovateX</string>
+    <string name="device">Device</string>
+    <string name="battery">Battery</string>
+    <string name="temp">Temperature</string>
+    <string name="sensors">Sensors</string>
+    <string name="about_us">About Us</string>
 </resources>

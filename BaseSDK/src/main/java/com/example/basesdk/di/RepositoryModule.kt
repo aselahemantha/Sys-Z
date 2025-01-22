@@ -4,7 +4,7 @@ import android.content.Context
 import com.example.basesdk.data.repository.institute.ConfigurationRepositoryImpl
 import com.example.basesdk.domain.repository.institute.ConfigurationRepository
 import com.example.basesdk.domain.configurationservice.ConfigurationService
-import com.gtn.basesdk.domain.configurationservice.LogService
+import com.example.basesdk.domain.configurationservice.LogService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

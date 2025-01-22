@@ -19,7 +19,7 @@ package com.example.basesdk.di
 import com.example.basesdk.configurationservice.ConfigurationServiceImpl
 import com.example.basesdk.configurationservice.LogServiceImpl
 import com.example.basesdk.domain.configurationservice.ConfigurationService
-import com.gtn.basesdk.domain.configurationservice.LogService
+import com.example.basesdk.domain.configurationservice.LogService
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

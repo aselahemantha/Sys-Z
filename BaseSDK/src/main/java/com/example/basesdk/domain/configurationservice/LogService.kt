@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.gtn.basesdk.domain.configurationservice
+package com.example.basesdk.domain.configurationservice
 
 interface LogService {
     fun logNonFatalCrash(throwable: Throwable)
