@@ -16,9 +16,7 @@ limitations under the License.
 
 package com.example.basesdk.di
 
-import com.example.basesdk.configurationservice.ConfigurationServiceImpl
-import com.example.basesdk.configurationservice.LogServiceImpl
-import com.example.basesdk.domain.configurationservice.ConfigurationService
+import com.example.basesdk.data.configurationservice.LogServiceImpl
 import com.example.basesdk.domain.configurationservice.LogService
 import dagger.Binds
 import dagger.Module
@@ -28,7 +26,6 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class ConfigServiceModule {
-    @Binds abstract fun provideConfigurationService(impl: ConfigurationServiceImpl): ConfigurationService
-
-    @Binds abstract fun provideLogService(impl: LogServiceImpl): LogService
+    @Binds
+    abstract fun provideLogService(impl: LogServiceImpl): LogService
 }

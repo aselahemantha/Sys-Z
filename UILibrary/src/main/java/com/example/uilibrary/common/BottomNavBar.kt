@@ -47,7 +47,7 @@ import com.example.uilibrary.util.scale.scaleWidth
 import com.example.uilibrary.view.dashboard.main.BaseNotification
 import com.example.uilibrary.view.dashboard.main.NotifierType
 import com.gtn.basesdk.util.enums.ConnectionState
-import com.gtn.basesdk.util.enums.PulseState
+import com.example.basesdk.util.enums.AppState
 
 @Composable
 fun BottomNavBar(
@@ -57,32 +57,6 @@ fun BottomNavBar(
     baseNotification: BaseNotification = BaseNotification(),
 ) {
     var backPressed by remember { mutableStateOf(false) }
-    val priceColor by animateColorAsState(
-        targetValue =
-            if (baseNotification.priceConnectionState == ConnectionState.CONNECTED) {
-                if (baseNotification.pricePulseState == PulseState.UP) {
-                    Color.Green
-                } else {
-                    Color.Green.copy(alpha = 0.7f)
-                }
-            } else {
-                Color.LightGray
-            },
-        label = "",
-    )
-    val tradeColor by animateColorAsState(
-        targetValue =
-            if (baseNotification.tradeConnectionState == ConnectionState.CONNECTED) {
-                if (baseNotification.tradePulseState == PulseState.UP) {
-                    Color.Red
-                } else {
-                    Color.Red.copy(alpha = 0.5f)
-                }
-            } else {
-                Color.LightGray
-            },
-        label = "",
-    )
 
     val dispatcherOwner = LocalOnBackPressedDispatcherOwner.current
     DisposableEffect(dispatcherOwner) {
@@ -231,14 +205,12 @@ fun BottomNavBar(
                 Box(
                     modifier =
                         Modifier
-                            .size(2.dp, 1.dp)
-                            .background(priceColor),
+                            .size(2.dp, 1.dp),
                 )
                 Box(
                     modifier =
                         Modifier
-                            .size(2.dp, 1.dp)
-                            .background(tradeColor),
+                            .size(2.dp, 1.dp),
                 )
             }
         }

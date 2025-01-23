@@ -22,7 +22,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 interface ConfigurationService {
 //    suspend fun fetchConfiguration(): Boolean
 
-    fun getPulseRemoteConfig(): FirebaseRemoteConfig?
+    fun getAppRemoteConfig(): FirebaseRemoteConfig?
 
     val isShowLoginText: Boolean
 

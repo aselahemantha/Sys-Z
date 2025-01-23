@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.basesdk.configurationservice
+package com.example.basesdk.data.configurationservice
 
 import com.example.basesdk.BuildConfig
 import com.example.basesdk.domain.configurationservice.ConfigurationService
@@ -25,10 +25,7 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.get
 import com.google.firebase.remoteconfig.remoteConfig
 import com.google.firebase.remoteconfig.remoteConfigSettings
-import com.gtn.basesdk.domain.configurationservice.trace
-import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
-
 
 class ConfigurationServiceImpl
     @Inject
@@ -50,7 +47,7 @@ class ConfigurationServiceImpl
 
 //        override suspend fun fetchConfiguration(): Boolean = trace(FETCH_CONFIG_TRACE) { remoteConfig.fetchAndActivate().await() }
 
-        override fun getPulseRemoteConfig(): FirebaseRemoteConfig = remoteConfig
+        override fun getAppRemoteConfig(): FirebaseRemoteConfig = remoteConfig
 
         override fun getFirebasePerformance(): FirebasePerformance = performance
 

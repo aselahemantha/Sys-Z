@@ -2,13 +2,7 @@ package com.example.uilibrary.view.onboard.splash
 
 import android.content.Context
 import androidx.core.splashscreen.SplashScreen
-import com.example.basesdk.domain.model.InstitutionConfig
 import com.example.basesdk.domain.usecase.auth.ConnectivityCheckerUseCase
-import com.example.basesdk.domain.usecase.institute.InitialFetchUseCase
-import com.example.basesdk.util.Resource
-import com.example.uilibrary.BuildConfig
-import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.google.firebase.perf.FirebasePerformance
 import com.example.uilibrary.coreui.NavigationItem
 import com.example.uilibrary.util.AppNavigator
 import com.gtn.uilibrary.view.onboard.OnboardViewModel
@@ -23,7 +17,6 @@ class SplashViewModel
     constructor(
         private val appNavigator: AppNavigator,
         private val connectivityCheckerUseCase: ConnectivityCheckerUseCase,
-        private val initialFetchUseCase: InitialFetchUseCase,
         private val context: Context,
     ) : OnboardViewModel(context, connectivityCheckerUseCase) {
         private var _isLoading: MutableStateFlow<SplashScreen.KeepOnScreenCondition> =

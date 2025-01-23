@@ -14,8 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -24,9 +22,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.uilibrary.R
-import com.example.uilibrary.elements.banners.NoConnection
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
 import com.example.uilibrary.designSystem.uiComponent.TextComponent
+import com.example.uilibrary.elements.banners.NoConnection
 import com.example.uilibrary.util.AppStatusBarColor
 import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
@@ -37,8 +35,6 @@ import kotlinx.coroutines.delay
 @Composable
 fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
     val connectionState by viewModel.networkConnectivityState.collectAsState()
-    var isTextFieldVisible by remember { mutableStateOf(false) }
-    var textFieldValue by remember { mutableStateOf("") }
     LaunchedEffect(key1 = viewModel, key2 = connectionState) {
         if (connectionState == ConnectionState.CONNECTED) {
 //            val fetchData = viewModel.initialFetchAndCacheConfiguration()
@@ -92,15 +88,6 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
                     text = AnnotatedString(stringResource(id = R.string.brand_name)),
                     fontSize = 12f.scaleFontSize(),
                     fontColor = LocalCustomColorsPalette.current.figmaColors.Typography80,
-                )
-                Spacer(modifier = Modifier.width(4f.scaleWidth()))
-                Image(
-                    painter = painterResource(R.drawable.sysz_splash_1),
-                    contentDescription = "Innovate X Logo",
-                    modifier =
-                        Modifier
-                            .width(16f.scaleWidth())
-                            .height(16f.scaleHeight()),
                 )
             }
         }

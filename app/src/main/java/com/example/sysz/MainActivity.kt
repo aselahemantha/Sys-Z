@@ -26,15 +26,14 @@ import com.example.uilibrary.coreui.theme.AuthenticationAppTheme
 import com.example.uilibrary.util.enums.AppTheme
 import com.example.uilibrary.view.dashboard.main.GetDashboardContent
 import com.example.uilibrary.view.onboard.splash.SplashActivity
-import com.google.firebase.analytics.FirebaseAnalytics
 import com.example.uilibrary.view.onboard.splash.SplashViewModel
+import com.google.firebase.analytics.FirebaseAnalytics
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : FragmentActivity() {
-
     private val viewModel: SplashViewModel by viewModels()
-    private val appTheme = mutableStateOf(AppTheme.SYSTEM)
+    private val appTheme = mutableStateOf(AppTheme.LIGHT)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         startActivity(Intent(this@MainActivity, SplashActivity::class.java))
@@ -45,12 +44,11 @@ class MainActivity : FragmentActivity() {
             FirebaseAnalytics.getInstance(this).setAnalyticsCollectionEnabled(false)
         }
 
-
         installSplashScreen().setKeepOnScreenCondition(viewModel.isLoading.value)
         createNotificationChannel()
 
         setContent {
-            appTheme.value = AppTheme.fromCode(AppTheme.SYSTEM.code)
+            appTheme.value = AppTheme.fromCode(AppTheme.LIGHT.code)
             AuthenticationAppTheme(appTheme = appTheme.value) {
                 if (intent.hasExtra("messageTarget")) {
                     val targetView = intent.getStringExtra("messageTarget")
@@ -94,10 +92,10 @@ class MainActivity : FragmentActivity() {
                 CompositionLocalProvider(LocalDensity provides customDensity) {
                     Box(
                         modifier =
-                        Modifier
-                            .pointerInput(Unit) {
-                                // detectTapGestures(onTap = { focusManager.clearFocus() }) // comment for anr issue
-                            },
+                            Modifier
+                                .pointerInput(Unit) {
+                                    // detectTapGestures(onTap = { focusManager.clearFocus() }) // comment for anr issue
+                                },
                     ) {
                         GetDashboardContent(targetView, theme, onTheme)
                     }

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package com.example.basesdk.configurationservice
+package com.example.basesdk.data.configurationservice
 
 import com.google.firebase.Firebase
 import com.google.firebase.crashlytics.crashlytics

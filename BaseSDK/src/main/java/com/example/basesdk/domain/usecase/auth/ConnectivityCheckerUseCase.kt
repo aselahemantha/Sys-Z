@@ -13,6 +13,5 @@ class ConnectivityCheckerUseCase() {
         ConnectivityChecker(context)
             .connectivityStatus
             .catch { emit(ConnectionState.ERROR) }
-            // Emit ERROR on exception
             .flowOn(Dispatchers.IO)
 }

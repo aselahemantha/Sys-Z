@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="splash_text">Made in Sri Lanka with ♥</string>
-    <string name="brand_name">innovateX</string>
+    <string name="brand_name">InnovateX</string>
     <string name="device">Device</string>
     <string name="battery">Battery</string>
     <string name="temp">Temperature</string>
