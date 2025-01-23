@@ -24,10 +24,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.uilibrary.R
-import com.example.uilibrary.banners.NoConnection
+import com.example.uilibrary.elements.banners.NoConnection
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
 import com.example.uilibrary.designSystem.uiComponent.TextComponent
-import com.example.uilibrary.util.AppStatusbarColor
+import com.example.uilibrary.util.AppStatusBarColor
 import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
 import com.example.uilibrary.util.scale.scaleWidth
@@ -53,7 +53,7 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
         }
     }
 
-    AppStatusbarColor(
+    AppStatusBarColor(
         statusBarColor = LocalCustomColorsPalette.current.figmaColors.Background10,
         navigationBarColor = LocalCustomColorsPalette.current.figmaColors.Background10,
     )
@@ -61,9 +61,9 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
     Box {
         Column(
             modifier =
-            Modifier
-                .fillMaxSize()
-                .background(LocalCustomColorsPalette.current.figmaColors.Background10),
+                Modifier
+                    .fillMaxSize()
+                    .background(LocalCustomColorsPalette.current.figmaColors.Background10),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
@@ -71,11 +71,11 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
 
             Image(
                 painter = painterResource(id = R.drawable.sysz_splash_2),
-                contentDescription = "gtn logo",
+                contentDescription = "sysz logo",
                 modifier =
-                Modifier
-                    .width(296f.scaleWidth())
-                    .height(133f.scaleHeight()),
+                    Modifier
+                        .width(296f.scaleWidth())
+                        .height(133f.scaleHeight()),
             )
 
             Spacer(modifier = Modifier.height(396f.scaleHeight()))
@@ -98,9 +98,9 @@ fun SplashScreen(viewModel: SplashViewModel = hiltViewModel()) {
                     painter = painterResource(R.drawable.sysz_splash_1),
                     contentDescription = "Innovate X Logo",
                     modifier =
-                    Modifier
-                        .width(16f.scaleWidth())
-                        .height(16f.scaleHeight())
+                        Modifier
+                            .width(16f.scaleWidth())
+                            .height(16f.scaleHeight()),
                 )
             }
         }

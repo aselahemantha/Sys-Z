@@ -7,4 +7,5 @@
     <string name="temp">Temperature</string>
     <string name="sensors">Sensors</string>
     <string name="about_us">About Us</string>
+    <string name="bottom_line">Powered by InnovateX</string>
 </resources>

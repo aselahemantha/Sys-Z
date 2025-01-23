@@ -1,4 +1,4 @@
-package com.example.uilibrary.banners
+package com.example.uilibrary.elements.banners
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme.shapes
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -31,24 +32,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.uilibrary.R
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
-import com.example.uilibrary.elements.popup.snackbar.shapes
 import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
 import com.example.uilibrary.util.scale.scaleWidth
 
 @Composable
-fun SlowConnection(
+fun NoConnection(
     isVisible: Boolean = false,
-    title: String = "Slow Internet Connection!",
+    title: String = "No Internet Connection Found!",
+    subtitle: String = "Please check your internet settings",
 ) {
     var color = LocalCustomColorsPalette.current.figmaColors.Background0
 
-    // Auto-dismiss logic
-//    LaunchedEffect(isVisible) {
-//        if (isVisible) {
-//            delay(2000)
-//        }
-//    }
     AnimatedVisibility(
         visible = isVisible,
         enter =
@@ -83,7 +78,7 @@ fun SlowConnection(
                 horizontalArrangement = Arrangement.Start,
             ) {
                 Icon(
-                    imageVector = ImageVector.vectorResource(id = R.drawable.device_health_splash),
+                    imageVector = ImageVector.vectorResource(id = R.drawable.no_internet),
                     contentDescription = null,
                     tint = LocalCustomColorsPalette.current.figmaColors.Negative0,
                     modifier = Modifier.size(24f.scaleWidth()),
@@ -106,7 +101,7 @@ fun SlowConnection(
                         textAlign = TextAlign.Left,
                     )
                     Text(
-                        text = "Please check your internet settings",
+                        text = subtitle,
                         fontSize = 14f.scaleFontSize(),
                         fontWeight = FontWeight.Normal,
                         fontFamily = FontFamily(Font(R.font.montserrat_regular)),
@@ -121,6 +116,6 @@ fun SlowConnection(
 
 @Preview
 @Composable
-fun SlowConnectionPreview() {
-    SlowConnection(true)
+fun NoConnectionPreview() {
+    NoConnection(true)
 }

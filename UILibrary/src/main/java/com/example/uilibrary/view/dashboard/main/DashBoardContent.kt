@@ -40,7 +40,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.basesdk.domain.model.InstitutionConfig
-import com.example.uilibrary.banners.SlowConnection
+import com.example.uilibrary.elements.banners.SlowConnection
 import com.example.uilibrary.common.BottomNavBar
 import com.example.uilibrary.coreui.NavigationItem
 import com.example.uilibrary.coreui.Routes

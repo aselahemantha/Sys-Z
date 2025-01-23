@@ -1,4 +1,4 @@
-package com.example.uilibrary.banners
+package com.example.uilibrary.elements.banners
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -17,7 +17,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme.shapes
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,18 +31,24 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.uilibrary.R
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
+import com.example.uilibrary.elements.popup.snackbar.shapes
 import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
 import com.example.uilibrary.util.scale.scaleWidth
 
 @Composable
-fun NoConnection(
+fun SlowConnection(
     isVisible: Boolean = false,
-    title: String = "No Internet Connection Found!",
-    subtitle: String = "Please check your internet settings",
+    title: String = "Slow Internet Connection!",
 ) {
     var color = LocalCustomColorsPalette.current.figmaColors.Background0
 
+    // Auto-dismiss logic
+//    LaunchedEffect(isVisible) {
+//        if (isVisible) {
+//            delay(2000)
+//        }
+//    }
     AnimatedVisibility(
         visible = isVisible,
         enter =
@@ -78,7 +83,7 @@ fun NoConnection(
                 horizontalArrangement = Arrangement.Start,
             ) {
                 Icon(
-                    imageVector = ImageVector.vectorResource(id = R.drawable.no_internet),
+                    imageVector = ImageVector.vectorResource(id = R.drawable.device_health_splash),
                     contentDescription = null,
                     tint = LocalCustomColorsPalette.current.figmaColors.Negative0,
                     modifier = Modifier.size(24f.scaleWidth()),
@@ -101,7 +106,7 @@ fun NoConnection(
                         textAlign = TextAlign.Left,
                     )
                     Text(
-                        text = subtitle,
+                        text = "Please check your internet settings",
                         fontSize = 14f.scaleFontSize(),
                         fontWeight = FontWeight.Normal,
                         fontFamily = FontFamily(Font(R.font.montserrat_regular)),
@@ -116,6 +121,6 @@ fun NoConnection(
 
 @Preview
 @Composable
-fun NoConnectionPreview() {
-    NoConnection(true)
+fun SlowConnectionPreview() {
+    SlowConnection(true)
 }

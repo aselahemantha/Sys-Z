@@ -38,16 +38,16 @@ import androidx.compose.ui.unit.dp
 import com.example.basesdk.domain.model.InstitutionConfig
 import com.example.basesdk.domain.model.NavItem
 import com.example.uilibrary.R
+import com.example.uilibrary.coreui.Routes
 import com.example.uilibrary.coreui.theme.LocalCustomColorsPalette
 import com.example.uilibrary.coreui.theme.NoRippleTheme
 import com.example.uilibrary.util.scale.scaleFontSize
 import com.example.uilibrary.util.scale.scaleHeight
 import com.example.uilibrary.util.scale.scaleWidth
+import com.example.uilibrary.view.dashboard.main.BaseNotification
 import com.example.uilibrary.view.dashboard.main.NotifierType
 import com.gtn.basesdk.util.enums.ConnectionState
 import com.gtn.basesdk.util.enums.PulseState
-import com.example.uilibrary.coreui.Routes
-import com.example.uilibrary.view.dashboard.main.BaseNotification
 
 @Composable
 fun BottomNavBar(
@@ -59,28 +59,28 @@ fun BottomNavBar(
     var backPressed by remember { mutableStateOf(false) }
     val priceColor by animateColorAsState(
         targetValue =
-        if (baseNotification.priceConnectionState == ConnectionState.CONNECTED) {
-            if (baseNotification.pricePulseState == PulseState.UP) {
-                Color.Green
+            if (baseNotification.priceConnectionState == ConnectionState.CONNECTED) {
+                if (baseNotification.pricePulseState == PulseState.UP) {
+                    Color.Green
+                } else {
+                    Color.Green.copy(alpha = 0.7f)
+                }
             } else {
-                Color.Green.copy(alpha = 0.7f)
-            }
-        } else {
-            Color.LightGray
-        },
+                Color.LightGray
+            },
         label = "",
     )
     val tradeColor by animateColorAsState(
         targetValue =
-        if (baseNotification.tradeConnectionState == ConnectionState.CONNECTED) {
-            if (baseNotification.tradePulseState == PulseState.UP) {
-                Color.Red
+            if (baseNotification.tradeConnectionState == ConnectionState.CONNECTED) {
+                if (baseNotification.tradePulseState == PulseState.UP) {
+                    Color.Red
+                } else {
+                    Color.Red.copy(alpha = 0.5f)
+                }
             } else {
-                Color.Red.copy(alpha = 0.5f)
-            }
-        } else {
-            Color.LightGray
-        },
+                Color.LightGray
+            },
         label = "",
     )
 
@@ -102,51 +102,51 @@ fun BottomNavBar(
     CompositionLocalProvider(LocalRippleTheme provides NoRippleTheme) {
         Box(
             modifier =
-            Modifier
-                .height(55f.scaleHeight()),
+                Modifier
+                    .height(55f.scaleHeight()),
         ) {
             NavigationBar(
                 modifier =
-                Modifier
-                    .height(55f.scaleHeight())
-                    .shadow(elevation = 15.dp),
+                    Modifier
+                        .height(55f.scaleHeight())
+                        .shadow(elevation = 15.dp),
                 containerColor = LocalCustomColorsPalette.current.figmaColors.Background0,
                 contentColor = LocalCustomColorsPalette.current.figmaColors.Background0,
                 tonalElevation = 10.dp,
             ) {
-
-                val bottomNavItems = listOf(
-                    NavItem(
-                        route = "tab01-device",
-                        langKey = "Device",
-                        icon = "Device",
-                        screenId = "Device",
+                val bottomNavItems =
+                    listOf(
+                        NavItem(
+                            route = "tab01-device",
+                            langKey = "Device",
+                            icon = "Device",
+                            screenId = "Device",
                         ),
-                    NavItem(
-                        route = "tab02-battery",
-                        langKey = "Battery",
-                        icon = "Battery",
-                        screenId = "Battery",
-                    ),
-                    NavItem(
-                        route = "tab03-temp",
-                        langKey = "Temperature",
-                        icon = "Temperature",
-                        screenId = "Temperature",
-                    ),
-                    NavItem(
-                        route = "tab04-sensors",
-                        langKey = "Sensors",
-                        icon = "Sensors",
-                        screenId = "Sensors",
-                    ),
-                    NavItem(
-                        route = "tab05-about",
-                        langKey = "About",
-                        icon = "About",
-                        screenId = "About",
+                        NavItem(
+                            route = "tab02-battery",
+                            langKey = "Battery",
+                            icon = "Battery",
+                            screenId = "Battery",
+                        ),
+                        NavItem(
+                            route = "tab03-temp",
+                            langKey = "Temperature",
+                            icon = "Temperature",
+                            screenId = "Temperature",
+                        ),
+                        NavItem(
+                            route = "tab04-sensors",
+                            langKey = "Sensors",
+                            icon = "Sensors",
+                            screenId = "Sensors",
+                        ),
+                        NavItem(
+                            route = "tab05-about",
+                            langKey = "About",
+                            icon = "About",
+                            screenId = "About",
+                        ),
                     )
-                )
 
                 bottomNavItems.forEachIndexed { index, item ->
                     var routeVal = Routes.fromRoute(item.route)
@@ -163,9 +163,9 @@ fun BottomNavBar(
                                 painter = painterResource(id = routeVal.imageRes),
                                 contentDescription = "bottom navigation icons",
                                 modifier =
-                                Modifier
-                                    .size(24f.scaleWidth())
-                                    .testTag(routeVal.route),
+                                    Modifier
+                                        .size(24f.scaleWidth())
+                                        .testTag(routeVal.route),
                                 colorFilter = ColorFilter.tint(color = iconColor),
                             )
                         },
@@ -187,57 +187,58 @@ fun BottomNavBar(
             }
             Row(
                 modifier =
-                Modifier
-                    .height(1.dp)
-                    .fillMaxWidth()
-                    .align(Alignment.TopCenter),
+                    Modifier
+                        .height(1.dp)
+                        .fillMaxWidth()
+                        .align(Alignment.TopCenter),
             ) {
                 Box(
                     modifier =
-                    Modifier
-                        .height(1.dp)
-                        .weight(1f),
+                        Modifier
+                            .height(1.dp)
+                            .weight(1f),
                 ) {
-                    if (baseNotification.notifier.equals(NotifierType.CHANGE) || baseNotification.notifier.equals(
-                            NotifierType.LOADING
+                    if (baseNotification.notifier.equals(NotifierType.CHANGE) ||
+                        baseNotification.notifier.equals(
+                            NotifierType.LOADING,
                         )
                     ) {
                         LinearProgressIndicator(
                             modifier =
-                            Modifier
-                                .height(1.dp)
-                                .fillMaxWidth(),
+                                Modifier
+                                    .height(1.dp)
+                                    .fillMaxWidth(),
                             // .align(Alignment.TopCenter)
                             color =
-                            if (baseNotification.notifier.equals(NotifierType.CHANGE)) {
-                                LocalCustomColorsPalette.current.figmaColors.Warning0
-                            } else if (baseNotification.notifier.equals(NotifierType.LOADING)) {
-                                LocalCustomColorsPalette.current.figmaColors.Primary0
-                            } else {
-                                Color.Transparent
-                            },
+                                if (baseNotification.notifier.equals(NotifierType.CHANGE)) {
+                                    LocalCustomColorsPalette.current.figmaColors.Warning0
+                                } else if (baseNotification.notifier.equals(NotifierType.LOADING)) {
+                                    LocalCustomColorsPalette.current.figmaColors.Primary0
+                                } else {
+                                    Color.Transparent
+                                },
                             trackColor =
-                            if (baseNotification.notifier.equals(NotifierType.CHANGE)) {
-                                LocalCustomColorsPalette.current.figmaColors.Warning100
-                            } else if (baseNotification.notifier.equals(NotifierType.LOADING)) {
-                                LocalCustomColorsPalette.current.figmaColors.Primary100
-                            } else {
-                                Color.Transparent
-                            },
+                                if (baseNotification.notifier.equals(NotifierType.CHANGE)) {
+                                    LocalCustomColorsPalette.current.figmaColors.Warning100
+                                } else if (baseNotification.notifier.equals(NotifierType.LOADING)) {
+                                    LocalCustomColorsPalette.current.figmaColors.Primary100
+                                } else {
+                                    Color.Transparent
+                                },
                         )
                     }
                 }
                 Box(
                     modifier =
-                    Modifier
-                        .size(2.dp, 1.dp)
-                        .background(priceColor),
+                        Modifier
+                            .size(2.dp, 1.dp)
+                            .background(priceColor),
                 )
                 Box(
                     modifier =
-                    Modifier
-                        .size(2.dp, 1.dp)
-                        .background(tradeColor),
+                        Modifier
+                            .size(2.dp, 1.dp)
+                            .background(tradeColor),
                 )
             }
         }

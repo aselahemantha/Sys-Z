@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.view.WindowCompat
 
-@Composable fun AppStatusbarColor(
+@Composable fun AppStatusBarColor(
     statusBarColor: Color,
     navigationBarColor: Color,
 ) {
