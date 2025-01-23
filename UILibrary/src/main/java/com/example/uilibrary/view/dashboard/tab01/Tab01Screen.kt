@@ -81,7 +81,6 @@ fun Tab01Screen(viewModel: Tab01ViewModel = hiltViewModel()) {
                     ) {
                         item {
                         }
-
                         item {
                         }
                         item {
