@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -31,15 +32,6 @@ import com.gtn.basesdk.util.enums.ConnectionState
 fun Tab01Screen(viewModel: Tab01ViewModel = hiltViewModel()) {
     val baseNotificationState by viewModel.sharedState.value.baseNoficationState
         .collectAsState()
-
-    val manufacturer = Build.MANUFACTURER
-    val model = Build.MODEL
-    val device = Build.DEVICE
-    val brand = Build.BRAND
-    val hardware = Build.HARDWARE
-    val serial = Build.SERIAL // Deprecated; use `Build.getSerial()`
-    val versionRelease = Build.VERSION.RELEASE // e.g., "12"
-    val versionSdk = Build.VERSION.SDK_INT // e.g., 31
 
     AppStatusBarColor(
         statusBarColor = LocalCustomColorsPalette.current.figmaColors.Header0,
@@ -66,7 +58,7 @@ fun Tab01Screen(viewModel: Tab01ViewModel = hiltViewModel()) {
                         bottom = paddingValues.calculateBottomPadding(),
                     ),
             ) {
-                if (baseNotificationState.networkConnectivityState.equals(ConnectionState.DISCONNECTED)) {
+                if (baseNotificationState.networkConnectivityState == ConnectionState.DISCONNECTED) {
                     NoConnectionFound()
                 } else {
                     LazyColumn(
@@ -80,6 +72,9 @@ fun Tab01Screen(viewModel: Tab01ViewModel = hiltViewModel()) {
                                 },
                     ) {
                         item {
+                            Text(
+                                "Abs"
+                            )
                         }
                         item {
                         }
